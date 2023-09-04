@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
     // TODO: implement initState
     if (_myBox.get("note") == null) {
       notes = [
-        ["First note", "This app is created with heart by OKS "]
+        ["First note", "This app is created with heart by Serge "]
       ];
     } else {
       notes = _myBox.get("note");
