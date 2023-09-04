@@ -16,6 +16,7 @@ class ViewNotePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text("Title: ${note[0]}"),
         actions: [
           IconButton(
@@ -41,6 +42,7 @@ class ViewNotePage extends StatelessWidget {
             Text(
               note[1],
               style: TextStyle(fontSize: 18),
+              textAlign: TextAlign.justify,
             )
           ],
         ),

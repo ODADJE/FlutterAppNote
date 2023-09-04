@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
     // TODO: implement initState
     if (_myBox.get("note") == null) {
       notes = [
-        ["Titre 1", "Body 1"]
+        ["First note", "This app is created with heart by OKS "]
       ];
     } else {
       notes = _myBox.get("note");
@@ -32,6 +32,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: const Text("Notes"),
       ),
       body: notes.length == 0
@@ -57,6 +58,7 @@ class _HomePageState extends State<HomePage> {
                   child: Container(
                     padding: EdgeInsets.all(1),
                     child: Card(
+                      elevation: 2,
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Column(
